@@ -1,6 +1,14 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --white: #ffffff;
+  --button: #39cdcc;
+  --primary-text: #213f7d;
+  --secondary-text: #545f7d;
+  --border-line: rgba(84, 95, 125, 0.15);
+  --placeholder-text: rgba(84, 95, 125, 0.45);
+  --red: #ff3366;
+
+  --padding: 20px;
+  --radius: 5px;
 }
 
 html,
@@ -10,8 +18,8 @@ body {
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background: var(--white);
+  font-family: var(--font-work-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,3 +29,15 @@ body {
   padding: 0;
   margin: 0;
 }
+
+/* // Tablet View (1024px)
+@media (max-width: 1024px) {
+}
+
+// Mobile View (768px)
+@media (max-width: 768px) {
+}
+
+//   Small Screens (480px)
+@media (max-width: 480px) {
+} */

@@ -1,0 +1,116 @@
+.formContainer {
+  width: 70%;
+  margin-inline: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 3rem;
+
+  .formHeader {
+    h1 {
+      font-weight: bold;
+      font-size: 2.5rem;
+      color: var(--primary-text);
+      margin-bottom: 0.6rem;
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: var(--secondary-text);
+    }
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+
+    .inputContainer {
+      display: flex;
+      flex-direction: column;
+
+      input {
+        width: 100%;
+        height: 3rem;
+        color: var(--secondary-text);
+        border-radius: var(--radius);
+        padding: 0.625rem;
+        font-size: 0.875rem;
+        border: 2px solid var(--border-line);
+        outline: 0;
+
+        &::placeholder {
+          color: var(--placeholder-text);
+        }
+
+        &:focus {
+          border-color: var(--button);
+        }
+      }
+
+      .passwordIcon {
+        position: absolute;
+        right: 1.25rem;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 600;
+        color: var(--button);
+        cursor: pointer;
+        user-select: none;
+      }
+
+      small {
+        color: var(--red);
+      }
+    }
+
+    input[type="submit"] {
+      width: 100%;
+      height: 3rem;
+      color: var(--white);
+      background-color: var(--button);
+      border-radius: var(--radius);
+      font-size: 1rem;
+      letter-spacing: 1px;
+      margin-top: 0.625rem;
+      cursor: pointer;
+      border: 0;
+
+      &:hover {
+        opacity: 80%;
+      }
+    }
+
+    p {
+      font-size: 1rem;
+      color: var(--button);
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+        text-underline-offset: 0.25rem;
+      }
+    }
+  }
+
+  // Mobile View (768px)
+  @media (max-width: 768px) {
+    width: 100%;
+    gap: 1.5rem;
+
+    .formHeader {
+      h1 {
+        font-size: 2rem;
+        margin-bottom: 0.3rem;
+      }
+
+      p {
+        font-size: 1rem;
+      }
+    }
+
+    .form {
+      gap: 1rem;
+    }
+  }
+}
