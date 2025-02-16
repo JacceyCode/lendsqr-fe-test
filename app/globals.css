@@ -8,7 +8,8 @@
   --red: #ff3366;
 
   --padding: 20px;
-  --radius: 5px;
+  --padding-2: 40px;
+  --radius: 8px;
 }
 
 html,
@@ -28,6 +29,15 @@ body {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+}
+
+main {
+  max-width: 1440px;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 /* // Tablet View (1024px)

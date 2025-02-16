@@ -44,6 +44,8 @@
 
   // Mobile View (768px)
   @media (max-width: 768px) {
+    width: 70%;
+    margin-inline: auto;
     flex-direction: column;
     justify-content: center;
 
@@ -70,6 +72,8 @@
 
   //   Small Screens (480px)
   @media (max-width: 480px) {
+    width: 90%;
+
     .imageContainer {
       padding: 1rem;
 
