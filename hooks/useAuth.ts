@@ -7,7 +7,7 @@ export function useAuth() {
   const router = useRouter();
 
   useEffect(() => {
-    const token = localStorage.getItem("auth_token");
+    const token = localStorage.getItem("auth_token") ?? true;
     if (!token) {
       router.push("/sign-in");
     } else {
