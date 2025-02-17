@@ -1,0 +1,45 @@
+.container {
+  background-color: var(--background);
+  height: 100%;
+
+  .body {
+    display: flex;
+    height: calc(100% - 5rem);
+
+    .nav {
+      background-color: var(--white);
+      width: 16rem;
+    }
+
+    .contentContainer {
+      padding: var(--padding-2);
+    }
+  }
+
+  // Tablet View (1024px)
+  @media (max-width: 1024px) {
+    .body {
+      .nav {
+        width: 13rem;
+      }
+    }
+  }
+
+  // Mobile View (768px)
+  @media (max-width: 768px) {
+    .body {
+      .nav {
+        width: 10rem;
+      }
+    }
+  }
+
+  //   Small Screens (480px)
+  @media (max-width: 480px) {
+    .body {
+      .nav {
+        width: 3rem;
+      }
+    }
+  }
+}

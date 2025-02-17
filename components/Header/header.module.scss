@@ -2,7 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: var(--padding) var(--padding-2);
+  padding: var(--padding);
+  background-color: var(--white);
 
   section {
     display: flex;
@@ -10,7 +11,11 @@
   }
 
   .left {
-    gap: 5rem;
+    gap: 8rem;
+
+    .hamburger {
+      display: none;
+    }
   }
 
   .right {
@@ -58,7 +63,7 @@
     padding: var(--padding);
 
     .left {
-      gap: 1.5rem;
+      gap: 4rem;
     }
 
     .right {
@@ -83,10 +88,24 @@
 
   // Mobile View (768px)
   @media (max-width: 768px) {
+    .left {
+      gap: 1.5rem;
+    }
   }
 
   //   Small Screens (480px)
   @media (max-width: 480px) {
+    .left {
+      gap: 0.4rem;
+
+      .hamburger {
+        display: block;
+        cursor: pointer;
+        color: var(--primary-text);
+        z-index: 2;
+      }
+    }
+
     .right {
       .docs {
         display: none;

@@ -1,13 +1,25 @@
+// "use client";
+
 import Logo from "@/components/Logo";
-import { Bell, ChevronDown } from "lucide-react";
-import Image from "next/image";
 import SearchInput from "@/components/Search";
+import Image from "next/image";
 import styles from "./header.module.scss";
+// import { useState } from "react";
+// import { Menu, X } from "lucide-react";
 
 const Header = () => {
+  // const [openSidebar, setOpenSidebar] = useState<boolean>(false);
+
   return (
     <header className={styles.header}>
       <section className={styles.left}>
+        {/* <section
+          className={styles.hamburger}
+          onClick={() => setOpenSidebar((prev) => !prev)}
+        >
+          {openSidebar ? <X size={16} /> : <Menu size={16} />}
+        </section> */}
+
         <Logo />
 
         <SearchInput />
@@ -16,7 +28,7 @@ const Header = () => {
       <section className={styles.right}>
         <p className={styles.docs}>Docs</p>
 
-        <Bell size={16} className={styles.bell} />
+        <Image src="./bell.svg" alt="Bell Icon" width={16} height={16} />
 
         <section className={styles.userContainer}>
           <section className={styles.image}>
@@ -24,7 +36,12 @@ const Header = () => {
           </section>
           <section className={styles.name}>
             <p>Adedeji</p>
-            <ChevronDown size={12} />
+            <Image
+              src="./dropdown.svg"
+              alt="Dropdown Icon"
+              width={15}
+              height={15}
+            />
           </section>
         </section>
       </section>

@@ -1,10 +1,13 @@
 :root {
   --white: #ffffff;
+  --background: #ececec;
   --button: #39cdcc;
   --primary-text: #213f7d;
   --secondary-text: #545f7d;
+  --primary-text-alpha: rgba(33, 63, 125, 0.5);
   --border-line: rgba(84, 95, 125, 0.15);
   --placeholder-text: rgba(84, 95, 125, 0.45);
+  --button-alpha: rgba(57, 205, 204, 0.1);
   --red: #ff3366;
 
   --padding: 20px;
@@ -38,6 +41,14 @@ main {
   overflow-y: auto;
   margin-right: auto;
   margin-left: auto;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* // Tablet View (1024px)

@@ -1,0 +1,50 @@
+a {
+  .heading {
+    display: flex;
+    align-items: center;
+    color: var(--primary-text-alpha);
+    padding-inline: var(--padding);
+    padding-block: 12px;
+    gap: 0.5rem;
+    position: relative;
+
+    &:hover {
+      background-color: var(--button-alpha);
+    }
+
+    hr {
+      width: 3px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      border: 0;
+      background-color: var(--button);
+    }
+
+    p {
+      font-size: 1rem;
+    }
+  }
+
+  // Tablet View (1024px)
+  @media (max-width: 1024px) {
+    .heading {
+      p {
+        font-size: 0.7rem;
+      }
+    }
+  }
+
+  // Mobile View (768px)
+  @media (max-width: 768px) {
+  }
+
+  //   Small Screens (480px)
+  @media (max-width: 480px) {
+    .heading {
+      p {
+        display: none;
+      }
+    }
+  }
+}
